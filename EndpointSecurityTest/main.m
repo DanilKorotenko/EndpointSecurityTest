@@ -112,52 +112,75 @@ int main(int argc, const char * argv[]) {
         } copy];
         
         es_new_client_result_t client_result = _es_new_client(&client, message_handler);
-        
-        if (client_result == ES_NEW_CLIENT_RESULT_SUCCESS) {
+
+        if (client_result == ES_NEW_CLIENT_RESULT_SUCCESS)
+        {
             NSLog(@"Successfully got new client at %p", client);
-        } else {
+        }
+        else
+        {
             NSLog(@"Couldn't get new client ...");
-            if (client_result == ES_NEW_CLIENT_RESULT_ERR_NOT_PERMITTED) { NSLog(@"Error: not permitted"); }
-            if (client_result == ES_NEW_CLIENT_RESULT_ERR_NOT_ENTITLED) { NSLog(@"Error: not entitled"); }
+            if (client_result == ES_NEW_CLIENT_RESULT_ERR_NOT_PERMITTED)
+            {
+                NSLog(@"Error: not permitted");
+            }
+
+            if (client_result == ES_NEW_CLIENT_RESULT_ERR_NOT_ENTITLED)
+            {
+                NSLog(@"Error: not entitled");
+            }
             return 0;
         }
-        
+
         es_clear_cache_result_t cache_result = _es_clear_cache(client);
-        
-        if (cache_result == ES_CLEAR_CACHE_RESULT_SUCCESS) {
+
+        if (cache_result == ES_CLEAR_CACHE_RESULT_SUCCESS)
+        {
             NSLog(@"Successfully cleared cache");
-        } else {
+        }
+        else
+        {
             NSLog(@"Couldn't clear cache ...");
         }
-        
+
         es_event_type_t event = ES_EVENT_TYPE_AUTH_EXEC;
+
         es_return_t subscribe_result = _es_subscribe(client, &event, 1);
-        
-        if (subscribe_result == ES_RETURN_SUCCESS) {
+
+        if (subscribe_result == ES_RETURN_SUCCESS)
+        {
             NSLog(@"Client subscribed successfully");
-        } else {
+        }
+        else
+        {
             NSLog(@"Client didn't subscribe ...");
         }
-        
+
         NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
         [runLoop run];
-        
+
         es_return_t unsubscribe_result = _es_unsubscribe_all(client);
-        
-        if (unsubscribe_result == ES_RETURN_SUCCESS) {
+
+        if (unsubscribe_result == ES_RETURN_SUCCESS)
+        {
             NSLog(@"Successfully unsubscribed all events");
-        } else {
+        }
+        else
+        {
             NSLog(@"Couldn't unsubscribe ...");
         }
-        
+
         es_return_t delete_result = _es_delete_client(client);
-        
-        if (delete_result == ES_RETURN_SUCCESS) {
+
+        if (delete_result == ES_RETURN_SUCCESS)
+        {
             NSLog(@"Successfully deleted client. Bye then.");
-        } else {
+        }
+        else
+        {
             NSLog(@"Couldn't delete client. Oh oh ...");
         }
     }
-    
+
     return 0;
 }

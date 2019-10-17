@@ -10,18 +10,6 @@
 		1C2D786322B904A2005F9C38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2D786222B904A2005F9C38 /* main.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1C2D785D22B904A2005F9C38 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		1C2D785F22B904A2005F9C38 /* EndpointSecurityTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EndpointSecurityTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2D786222B904A2005F9C38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,7 +61,6 @@
 			buildPhases = (
 				1C2D785B22B904A2005F9C38 /* Sources */,
 				1C2D785C22B904A2005F9C38 /* Frameworks */,
-				1C2D785D22B904A2005F9C38 /* CopyFiles */,
 			);
 			buildRules = (
 			);

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1C2D786322B904A2005F9C38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2D786222B904A2005F9C38 /* main.m */; };
+		DA077D92235892C0009BA952 /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C2D785F22B904A2005F9C38 /* EndpointSecurityTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EndpointSecurityTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2D786222B904A2005F9C38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C2D786B22B9113B005F9C38 /* EndpointSecurityTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EndpointSecurityTest.entitlements; sourceTree = "<group>"; };
+		DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA077D92235892C0009BA952 /* libEndpointSecurity.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +35,7 @@
 			children = (
 				1C2D786122B904A2005F9C38 /* EndpointSecurityTest */,
 				1C2D786022B904A2005F9C38 /* Products */,
+				DA077D90235892BF009BA952 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +54,14 @@
 				1C2D786B22B9113B005F9C38 /* EndpointSecurityTest.entitlements */,
 			);
 			path = EndpointSecurityTest;
+			sourceTree = "<group>";
+		};
+		DA077D90235892BF009BA952 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

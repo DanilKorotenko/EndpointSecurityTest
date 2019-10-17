@@ -242,7 +242,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = EndpointSecurityTest/EndpointSecurityTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N8YZB43954;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -253,7 +253,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = EndpointSecurityTest/EndpointSecurityTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N8YZB43954;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

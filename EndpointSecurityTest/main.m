@@ -34,6 +34,7 @@ int main(int argc, const char * argv[])
 //                NSLog(@"proc original ppid: %d", message->proc.original_ppid);
                 NSLog(@"event type: %u", message->event_type);
                 NSLog(@"action type: %u", message->action_type);
+                NSLog(@"Proc: %s", message->process->executable->path.data);
 
                 if (message->action_type == ES_ACTION_TYPE_NOTIFY)
                 {

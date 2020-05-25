@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		1C2D786322B904A2005F9C38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2D786222B904A2005F9C38 /* main.m */; };
 		DA077D92235892C0009BA952 /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */; };
+		DA70B1BC247C01930004DB6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA70B1BB247C01930004DB6A /* AppDelegate.m */; };
+		DA70B1BE247C01990004DB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA70B1BD247C01990004DB6A /* Assets.xcassets */; };
+		DA70B1C1247C01990004DB6A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA70B1BF247C01990004DB6A /* MainMenu.xib */; };
+		DA70B1C4247C01990004DB6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA70B1C3247C01990004DB6A /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C2D785F22B904A2005F9C38 /* EndpointSecurityTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EndpointSecurityTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2D786222B904A2005F9C38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
+		DA70B1B8247C01930004DB6A /* EndpointSecurityTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndpointSecurityTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA70B1BA247C01930004DB6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA70B1BB247C01930004DB6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA70B1BD247C01990004DB6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA70B1C0247C01990004DB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DA70B1C2247C01990004DB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA70B1C3247C01990004DB6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA70B1C5247C01990004DB6A /* EndpointSecurityTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EndpointSecurityTestApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA70B1B5247C01930004DB6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				1C2D786122B904A2005F9C38 /* EndpointSecurityTest */,
+				DA70B1B9247C01930004DB6A /* EndpointSecurityTestApp */,
 				1C2D786022B904A2005F9C38 /* Products */,
 				DA077D90235892BF009BA952 /* Frameworks */,
 			);
@@ -42,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				1C2D785F22B904A2005F9C38 /* EndpointSecurityTest */,
+				DA70B1B8247C01930004DB6A /* EndpointSecurityTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,20 @@
 				DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA70B1B9247C01930004DB6A /* EndpointSecurityTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				DA70B1BA247C01930004DB6A /* AppDelegate.h */,
+				DA70B1BB247C01930004DB6A /* AppDelegate.m */,
+				DA70B1BD247C01990004DB6A /* Assets.xcassets */,
+				DA70B1BF247C01990004DB6A /* MainMenu.xib */,
+				DA70B1C2247C01990004DB6A /* Info.plist */,
+				DA70B1C3247C01990004DB6A /* main.m */,
+				DA70B1C5247C01990004DB6A /* EndpointSecurityTestApp.entitlements */,
+			);
+			path = EndpointSecurityTestApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +116,23 @@
 			productReference = 1C2D785F22B904A2005F9C38 /* EndpointSecurityTest */;
 			productType = "com.apple.product-type.tool";
 		};
+		DA70B1B7247C01930004DB6A /* EndpointSecurityTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA70B1C6247C01990004DB6A /* Build configuration list for PBXNativeTarget "EndpointSecurityTestApp" */;
+			buildPhases = (
+				DA70B1B4247C01930004DB6A /* Sources */,
+				DA70B1B5247C01930004DB6A /* Frameworks */,
+				DA70B1B6247C01930004DB6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EndpointSecurityTestApp;
+			productName = EndpointSecurityTestApp;
+			productReference = DA70B1B8247C01930004DB6A /* EndpointSecurityTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +144,9 @@
 				TargetAttributes = {
 					1C2D785E22B904A2005F9C38 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					DA70B1B7247C01930004DB6A = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -109,9 +164,22 @@
 			projectRoot = "";
 			targets = (
 				1C2D785E22B904A2005F9C38 /* EndpointSecurityTest */,
+				DA70B1B7247C01930004DB6A /* EndpointSecurityTestApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA70B1B6247C01930004DB6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA70B1BE247C01990004DB6A /* Assets.xcassets in Resources */,
+				DA70B1C1247C01990004DB6A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C2D785B22B904A2005F9C38 /* Sources */ = {
@@ -122,7 +190,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA70B1B4247C01930004DB6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA70B1C4247C01990004DB6A /* main.m in Sources */,
+				DA70B1BC247C01930004DB6A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA70B1BF247C01990004DB6A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA70B1C0247C01990004DB6A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1C2D786422B904A2005F9C38 /* Debug */ = {
@@ -248,6 +336,44 @@
 			};
 			name = Release;
 		};
+		DA70B1C7247C01990004DB6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EndpointSecurityTestApp/EndpointSecurityTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XS293XGL58;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = EndpointSecurityTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.EndpointSecurityTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA70B1C8247C01990004DB6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EndpointSecurityTestApp/EndpointSecurityTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XS293XGL58;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = EndpointSecurityTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.EndpointSecurityTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -265,6 +391,15 @@
 			buildConfigurations = (
 				1C2D786722B904A2005F9C38 /* Debug */,
 				1C2D786822B904A2005F9C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA70B1C6247C01990004DB6A /* Build configuration list for PBXNativeTarget "EndpointSecurityTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA70B1C7247C01990004DB6A /* Debug */,
+				DA70B1C8247C01990004DB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

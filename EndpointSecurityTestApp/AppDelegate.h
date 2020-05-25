@@ -8,8 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+#include <EndpointSecurity/EndpointSecurity.h>
 
+@interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    es_client_t *_client;
+
+}
 
 @end
 

@@ -13,6 +13,7 @@
 		DA70B1BE247C01990004DB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA70B1BD247C01990004DB6A /* Assets.xcassets */; };
 		DA70B1C1247C01990004DB6A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA70B1BF247C01990004DB6A /* MainMenu.xib */; };
 		DA70B1C4247C01990004DB6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA70B1C3247C01990004DB6A /* main.m */; };
+		DA70B1C9247C04A60004DB6A /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA70B1C9247C04A60004DB6A /* libEndpointSecurity.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

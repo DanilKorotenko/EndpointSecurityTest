@@ -14,7 +14,6 @@
 /* Begin PBXFileReference section */
 		1C2D785F22B904A2005F9C38 /* EndpointSecurityTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EndpointSecurityTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2D786222B904A2005F9C38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1C2D786B22B9113B005F9C38 /* EndpointSecurityTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EndpointSecurityTest.entitlements; sourceTree = "<group>"; };
 		DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				1C2D786222B904A2005F9C38 /* main.m */,
-				1C2D786B22B9113B005F9C38 /* EndpointSecurityTest.entitlements */,
 			);
 			path = EndpointSecurityTest;
 			sourceTree = "<group>";

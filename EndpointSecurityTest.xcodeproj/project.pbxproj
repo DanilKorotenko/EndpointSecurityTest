@@ -315,7 +315,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = EndpointSecurityTestApp/EndpointSecurityTestApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XQKX38U9F4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -326,6 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.EndpointSecurityTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = EndpointSecurityTest;
 			};
 			name = Debug;
 		};
@@ -333,7 +335,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = EndpointSecurityTestApp/EndpointSecurityTestApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XQKX38U9F4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -344,6 +347,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.EndpointSecurityTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = EndpointSecurityTest;
 			};
 			name = Release;
 		};

@@ -16,6 +16,7 @@
 		1C2D785F22B904A2005F9C38 /* EndpointSecurityTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EndpointSecurityTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2D786222B904A2005F9C38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA077D91235892C0009BA952 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
+		DA3CA79824810DBD00611AEC /* EndpointSecurityTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EndpointSecurityTest.entitlements; sourceTree = "<group>"; };
 		DA8863DA247D59F0006F48ED /* EndpointSecurityTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EndpointSecurityTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8863E7247D5A1D006F48ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8863E8247D5A1D006F48ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		1C2D786122B904A2005F9C38 /* EndpointSecurityTest */ = {
 			isa = PBXGroup;
 			children = (
+				DA3CA79824810DBD00611AEC /* EndpointSecurityTest.entitlements */,
 				1C2D786222B904A2005F9C38 /* main.m */,
 			);
 			path = EndpointSecurityTest;
@@ -300,6 +302,8 @@
 		1C2D786722B904A2005F9C38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EndpointSecurityTest/EndpointSecurityTest.entitlements;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -307,6 +311,8 @@
 		1C2D786822B904A2005F9C38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EndpointSecurityTest/EndpointSecurityTest.entitlements;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
